@@ -1,0 +1,27 @@
+@import 'commons/vars';
+@import 'commons/reset';
+
+// Header
+@import 'commons/header';
+
+
+// Body
+@import 'partials/inicio';
+@import 'partials/carta';
+@import 'partials/horarios';
+@import 'partials/nosotros';
+@import 'partials/contacto';
+
+
+// Footer
+@import 'commons/footer';
+
+
+// Medias
+@import 'medias/media-header';
+@import 'medias/media-inicio';
+@import 'medias/media-carta';
+@import 'medias/media-horarios';
+@import 'medias/media-nosotros';
+@import 'medias/media-contacto';
+@import 'medias/media-footer';
