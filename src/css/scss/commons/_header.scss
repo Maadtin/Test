@@ -1,95 +1,62 @@
-.App {
-	min-height: 100vh;
+.menu {
+
+	&__trigger {
+			display: flex;
+			align-items: center;
+			position: relative;
+			cursor: pointer;
+			font-size: $fontSize;
+			margin: 1em;
+			.item {
+				transition: all .5s;
+				display: block;
+				width: 100%;
+				position: absolute;
+				height: $height;
+				background: $bgcColor;
+				border-radius: $borderRadius;
+				&:nth-child(1) {
+					top: 0;
+				}
+				&:nth-child(3) {
+					bottom: 0;
+				}
+			}
+			&.open {
+				.item {
+					&:nth-child(1) {
+						top: 42%;
+						transform: rotate(45deg);
+					}
+					&:nth-child(2) {
+						opacity: 0;
+						margin-left: 2em;
+					}
+					&:nth-child(3) {
+						bottom: 42%;
+						transform: rotate(-45deg);
+					}
+				}
+			}
+	}
+
+	background-color: red;
 	display: flex;
-	flex-direction: column;
-	background: url(https://estacaoleopoldina.com.br/wp-content/uploads/2016/11/fundo-home.jpg) center / cover no-repeat;
 
-	&-Navigation-Container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: .5em 1em;
+	&__logo {
+
 	}
 
-	&-Navigation {
-		display: flex;
-		justify-content: flex-end;
-		width: 50%;
+	&__container {
 	}
 
-	&-ListItem {
-		margin-left: 30px;
-		transition: all ease-in 0.2s;
-		&:hover {
-			background-color: darken(rgba(#66001D, .5), 10)
-		}
+	&__item {
+
 	}
 
-	&-Map {
-		width: 80%;
-		height: 400px;
-		margin: 0 auto;
+	&__link {
+
 	}
-
-
-	&-Link {
-		padding: .5em 1em;
-		color: #fff;
-		text-align: center;
-		&.active {
-			background-color: darken(#66001D, 10);
-			border-bottom: thin solid #eee;
-		}
-	
-	}
-
-	&-content {
-		flex: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		padding-top: 20px;
-	}
-
-}
-
-.section {
-	width: 100%;
-}
-
-.row {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.App-logo {
-	width: 10%;
-}
-
-.section {
-	h1 {
-		color: #fff;
-	}
-}
-
-
-.example-enter {
-	opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-	opacity: 1;
-	transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-	opacity: 1;
-}
-
-.example-leave.example-leave-active {
-	opacity: 0.01;
-	transition: opacity 300ms ease-in;
 }
 
 

@@ -7,9 +7,9 @@ class App extends React.Component {
 	render () {
 		return (
 			 <Router>
-				 <div className="App">
+				 <div className="wrapper">
 						<Nav />
-						<div className="App-content row">
+						<div className="wrapper__content row">
 							<Routes />
 						</div>
 				 </div>

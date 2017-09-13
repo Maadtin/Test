@@ -33,65 +33,6 @@ h1 {
   color: #fff;
 }
 
-.centered {
-  text-align: center;
-}
-
-.App {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: url(https://estacaoleopoldina.com.br/wp-content/uploads/2016/11/fundo-home.jpg) center/cover no-repeat;
-}
-
-.App-Navigation-Container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .5em 1em;
-}
-
-.App-Navigation {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-}
-
-.App-ListItem {
-  margin-left: 30px;
-  transition: all ease-in 0.2s;
-}
-
-.App-ListItem:hover {
-  background-color: rgba(51, 0, 15, 0.5);
-}
-
-.App-Map {
-  width: 80%;
-  height: 400px;
-  margin: 0 auto;
-}
-
-.App-Link {
-  padding: .5em 1em;
-  color: #fff;
-  text-align: center;
-}
-
-.App-Link.active {
-  background-color: #33000f;
-  border-bottom: thin solid #eee;
-}
-
-.App-content {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-top: 20px;
-}
-
 .section {
   width: 100%;
 }
@@ -101,28 +42,60 @@ h1 {
   margin: 0 auto;
 }
 
-.App-logo {
-  width: 10%;
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(https://estacaoleopoldina.com.br/wp-content/uploads/2016/11/fundo-home.jpg) center/cover no-repeat;
 }
 
-.section h1 {
-  color: #fff;
+.centered {
+  text-align: center;
 }
 
-.example-enter {
-  opacity: 0.01;
+.menu {
+  background-color: red;
+  display: flex;
 }
 
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
+.menu__trigger {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 40px;
+  margin: 1em;
 }
 
-.example-leave {
-  opacity: 1;
+.menu__trigger .item {
+  transition: all .5s;
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 0.2em;
+  background: #fff;
+  border-radius: 2.5px;
 }
 
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+.menu__trigger .item:nth-child(1) {
+  top: 0;
+}
+
+.menu__trigger .item:nth-child(3) {
+  bottom: 0;
+}
+
+.menu__trigger.open .item:nth-child(1) {
+  top: 42%;
+  transform: rotate(45deg);
+}
+
+.menu__trigger.open .item:nth-child(2) {
+  opacity: 0;
+  margin-left: 2em;
+}
+
+.menu__trigger.open .item:nth-child(3) {
+  bottom: 42%;
+  transform: rotate(-45deg);
 }

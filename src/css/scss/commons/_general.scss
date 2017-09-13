@@ -1,0 +1,21 @@
+.subtitle {
+	display: block;
+	font-size: $sub-subtitle-size;
+	color: #fff;
+}
+
+.section { width: 100%; }
+
+.row {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: url(https://estacaoleopoldina.com.br/wp-content/uploads/2016/11/fundo-home.jpg) center / cover no-repeat;
+}
+
+.centered { text-align: center; }
