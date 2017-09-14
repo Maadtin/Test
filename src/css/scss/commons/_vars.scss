@@ -1,13 +1,46 @@
 /// Variables
 
+$tablet: 780px;
+$desktop: 1200px;
+
+
+///////////// Paleta
+$primary: #A77749;
+$primary-hover: rgba($primary, .5);
+$primary-active: darken($primary, .5);
+
+///
+$white: #fff;
+$thin-border: thin solid rgba(#eee, .4);;
+
+
 $fontSize: 40px; //Tamaño del botón
 $bgcColor: #fff; //Color botón
 $height: .2em; //Grosor de cada línea
 $borderRadius: 2.5px; //Redondeado de las líneas
 
+$linkSize: 1rem;
 $title-size: 3rem;
 $subtitle-size: 1.4rem;
 $sub-subtitle-size: 1.3rem;
 $p-size: 1.2rem;
 
 $titles-margin: 20px;
+
+///////////
+$hamburger-padding-x                       : 15px !default;
+$hamburger-padding-y                       : 15px !default;
+$hamburger-layer-width                     : 40px !default;
+$hamburger-layer-height                    : 4px !default;
+$hamburger-layer-spacing                   : 6px !default;
+$hamburger-layer-color                     : #fff !default;
+$hamburger-layer-border-radius             : 4px !default;
+$hamburger-hover-opacity                   : 0.7 !default;
+$hamburger-hover-transition-duration       : 0.15s !default;
+$hamburger-hover-transition-timing-function: linear !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter    : opacity(50%) !default;

@@ -1,0 +1,26 @@
+@media (min-width: $tablet) {
+
+	.horarios {
+
+		&__table {
+			display: flex;
+			height: 200px;
+		}
+
+		&__section {
+			flex: 1;
+			flex-direction: column;
+			justify-content: center;
+			border-left: $thin-border;
+			border-bottom: none;
+			&:first-child {
+				border-left: none;
+			}
+		}
+
+
+	}
+
+
+
+}

@@ -1,0 +1,28 @@
+.horarios {
+
+	&__table {
+		background-color: rgba($primary-hover, .3);
+		border-radius: 2px;
+	}
+
+	&__section {
+		padding: 0 .5em;
+		transition: all ease-in 0.3s;
+		border-bottom: $thin-border;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&:last-child {
+			border-bottom: none;
+
+		}
+		&:hover {
+			background-color: $primary-hover
+		}
+	}
+
+	&__dia {
+		line-height: 3;
+	}
+
+}

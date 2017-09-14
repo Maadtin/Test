@@ -3,15 +3,15 @@ import { Helmet } from 'react-helmet'
 import Map from '../components/Map'
 
 const Contact = () => (
-	<div className="Contacto section">
+	<div className="contacto section">
 		<Helmet>
 			<title>Contacto</title>
 			<meta name="description" content="Descripción de Contacto"/>
 		</Helmet>
 		<h1>Contacto</h1>
-		<div className="App-location">
-			<span className="subtitle centered">Localización del Local</span>
-			<div className="App-Map">
+		<div className="contacto__map-container">
+			<span className="contacto__titutlo">Localización del Local</span>
+			<div className="contacto__mapa">
 				<Map lat={41.385197} lng={2.180433} zoom={17} />
 			</div>
 		</div>

@@ -1,0 +1,48 @@
+@media (min-width: $tablet) {
+
+	html { font-size: 17px; }
+
+	.menu {
+		display: block;
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		&__container {
+			background-color: transparent;
+			margin-top: 20px;
+			display: flex;
+			transform: translateX(0);
+			position: static;
+			justify-content: center;
+		}
+
+		&__item {
+			margin: 0 10px;
+		}
+		
+		&__link {
+			padding: .5em 1em;
+		}
+
+		&__logo {
+			margin: 0 auto;
+		}
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+
+}
+
+
+@media (min-width: $desktop) {
+
+	html {font-size: 18px}
+
+	.menu {
+		&__container {
+		}
+	}
+}

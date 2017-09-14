@@ -1,0 +1,13 @@
+{
+	"horarios":
+		[
+			{
+				"metaTitulo": "Horarios",
+				"titulo": "Horarios de funcionamiento"
+			},
+			{
+				"dia": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
+				"horas": ["9 a 21h"]
+			}
+		]
+}
